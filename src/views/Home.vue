@@ -7,7 +7,7 @@
     ></Modal>
     <div>
       <div class="row" v-for="(obj,index) in GET_MOVIE" :key="index">
-        <div class="card col-3" style="width: 10rem;" v-for="movie in obj.payload" :key="movie.id">
+        <div class="card col-12 col-lg-3" style="width: 10rem;" v-for="movie in obj.payload" :key="movie.id">
           <img class="card-img-top" :src="`https://image.tmdb.org/t/p/w500${movie.poster_path}`" />
           <div class="card-body">
             <h5 class="card-title">{{movie.original_title}}</h5>
