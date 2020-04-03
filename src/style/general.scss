@@ -27,16 +27,7 @@ html {
   vertical-align: middle;
 }
 
-.modal-container {
-  width: 90%;
-  margin: 0px auto;
-  padding: 20px 30px;
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
-  transition: all 0.3s ease;
-  font-family: Helvetica, Arial, sans-serif;
-}
+
 
 .modal-header h3 {
   margin-top: 0;
@@ -76,7 +67,9 @@ html {
 
 .card-body {
   position: relative;
+  padding-bottom: 30px;
 }
+
 
 .card-text {
   padding-bottom: 30px;
@@ -86,17 +79,29 @@ html {
   position: absolute;
   bottom: 14px;
   left: 0;
-
 }
+
 .btn{
   width: 100%;
-  
 }
 
 .moreBtn{
   margin-bottom: 50px;
 }
-
+.modal-container {
+  width: 100vw;
+  @media (min-width: 980px) {
+      width: 70vw;
+    }
+  
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  transition: all 0.3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -116,4 +121,7 @@ html {
   .close{
     padding-left: 1rem !important;
     
+  }
+  .green{
+    color:green !important;
   }

@@ -6,6 +6,7 @@ const state = {
 }
 const getters = {
     GET_MOVIE: state => {
+        console.log(state.movies);
         return state.movies
     },
     GET_TRAILER: state => {
@@ -14,6 +15,10 @@ const getters = {
 }
 const mutations = {
     SET_MOVIES: (state, payload) => {
+        for(let i = 0; i < payload.payload.length;i++){
+          payload.payload[i].readMore = true;
+        }
+        console.log(payload);
         state.movies.push(payload);
     },
     SET_TRAILER: (state, payload) => {
